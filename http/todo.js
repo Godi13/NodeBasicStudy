@@ -45,8 +45,7 @@ const server = http.createServer((req, res) => {
   if ('/' == req.url) {
     switch (req.method) {
       case 'GET':
-          show(res)
-          break
+        show(res)
         break
       case 'POST':
         add(req, res)
